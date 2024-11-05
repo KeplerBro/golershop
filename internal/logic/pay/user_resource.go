@@ -220,8 +220,10 @@ func (s *sUserResource) addExp(ctx context.Context, userId, exp uint) error {
 
 	// 更新用户经验记录
 	expHistory := &do.UserExpHistory{
+		UserId:      userId,
 		UserExp:     userExp,
 		ExpLogValue: exp,
+		ExpLogDesc:  "init",
 	}
 	if _, err := dao.UserExpHistory.Save(ctx, expHistory); err != nil {
 		return err

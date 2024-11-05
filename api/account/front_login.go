@@ -17,7 +17,7 @@ type LoginReq struct {
 type LoginRes model.LoginOutput
 
 type RegisterReq struct {
-	g.Meta      `path:"/front/account/login/register" tags:"login" method:"post" summary:"注册接口"`
+	g.Meta      `path:"/front/account/login/register" tags:"register" method:"post" summary:"注册接口"`
 	UserAccount string `p:"user_account" v:"required|length:4,50#请输入登录账号|账号长度为：min-max位"`
 	Password    string `p:"password" v:"required|length:5,12#请输入密码|密码长度为：min-max位"`
 	//Captcha  string `p:"verify_code" v:"required|length:4,6#请输入验证码|验证码长度不够"`
