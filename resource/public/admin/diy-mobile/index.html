@@ -1,5 +1,5 @@
 <!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8"/>
@@ -108,23 +108,23 @@
                     <div class="inputicon inputBox" style="min-width:20px;">首页</div>
                     <div class="inputicon inputBox" style="margin-right: 5px;">
                       <input class="weui-switch" type="checkbox" v-model="item.IsHome"
-                               :HometPageId="item.Id" v-on:change="setHomePage"/>
+                             :HometPageId="item.Id" v-on:change="setHomePage"/>
                     </div>
 
 
                     <div class="inputicon inputBox" style="min-width:20px;">社区 </div>
                     <div class="inputicon inputBox" style="margin-right: 5px;"><input class="weui-switch" type="checkbox" v-model="item.IsSns"
-                               :SnsPageId="item.Id" v-on:change="setSnsPage"/></div>
+                                                                                      :SnsPageId="item.Id" v-on:change="setSnsPage"/></div>
 
                     <div class="inputicon inputBox" style="min-width:20px;" v-if="false">资讯 </div>
                     <div class="inputicon inputBox" style="margin-right: 5px;" v-if="false"><input class="weui-switch" type="checkbox" v-model="item.IsArticle"
-                             :PointPageId="item.Id" :data-page-id="item.Id"
-                             data-page-type="IsArticle" v-on:change="setDefaultPage"/></div>
+                                                                                                   :PointPageId="item.Id" :data-page-id="item.Id"
+                                                                                                   data-page-type="IsArticle" v-on:change="setDefaultPage"/></div>
 
                     <div class="inputicon inputBox" style="min-width:20px;" v-if="false">积分 </div>
                     <div class="inputicon inputBox" style="margin-right: 5px;" v-if="false"><input class="weui-switch" type="checkbox" v-model="item.IsPoint"
-                           :PointPageId="item.Id" :data-page-id="item.Id"
-                           data-page-type="IsPoint" v-on:change="setDefaultPage"/></div>
+                                                                                                   :PointPageId="item.Id" :data-page-id="item.Id"
+                                                                                                   data-page-type="IsPoint" v-on:change="setDefaultPage"/></div>
 
                     <!--
                     <div class="inputicon inputBox" style="min-width:20px;">VIP </div>
@@ -318,9 +318,9 @@
                       页面标题
                     </div>
                     <div class="inputBox">
-                       <input maxlength="20" type="text" v-model="item.PageTitle"
-                                  placeholder="请输入页面标题" style="width:100px;" />  编号 <input maxlength="20" type="text" v-model="item.Id"
-                                                                       style="background-color: #e7e6e6;width:83px;" placeholder="请输入页面编号" readonly/>
+                      <input maxlength="20" type="text" v-model="item.PageTitle"
+                             placeholder="请输入页面标题" style="width:100px;" />  编号 <input maxlength="20" type="text" v-model="item.Id"
+                                                                                               style="background-color: #e7e6e6;width:83px;" placeholder="请输入页面编号" readonly/>
                     </div>
                   </div>
                   <div class="sub-level1 box_border">
@@ -328,7 +328,7 @@
                       分享标题
                     </div>
                     <div class="inputBox">
-                       <input maxlength="30" type="text" v-model="item.ShareTitle"
+                      <input maxlength="30" type="text" v-model="item.ShareTitle"
                              placeholder="请输入页面分享标题" style="width:227px;"/>
                     </div>
                   </div>
@@ -351,8 +351,8 @@
                         <div class="shear_img">
 															<span v-if="isUploadImage">
 																<input type="file" name="upfile" :id="'File'+item.Id"
-                                       v-on:change="uploadImage" :fileId="item.Id"
-                                       :imgSize="800" :uptype="1"/>
+                                                                       v-on:change="uploadImage" :fileId="item.Id"
+                                                                       :imgSize="800" :uptype="1"/>
 															</span>
                           <img :src="item.ShareImg || './static/diy/img/266x212.png' "
                                :imgId="item.Id" :uptype="1"/>
@@ -761,15 +761,15 @@
                 <div v-if="item.eltm2.data.words==null || item.eltm2.data.words==''">
                   <p>点此编辑『富文本』内容 ——</p>
                   <p>你可以对文字进行<strong>加粗</strong>、<em>斜体</em>、<span
-                    style="text-decoration: underline;">下划线</span>、<span
-                    style="text-decoration: line-through;">删除线</span>、文字<span
-                    style="color: rgb(0, 176, 240);">颜色</span>、<span
-                    style="background-color: rgb(255, 192, 0); color: rgb(255, 255, 255);">背景色</span>、以及字号<span
-                    style="font-size: 20px;">大</span><span
-                    style="font-size: 14px;">小</span>等简单排版操作。
+                          style="text-decoration: underline;">下划线</span>、<span
+                          style="text-decoration: line-through;">删除线</span>、文字<span
+                          style="color: rgb(0, 176, 240);">颜色</span>、<span
+                          style="background-color: rgb(255, 192, 0); color: rgb(255, 255, 255);">背景色</span>、以及字号<span
+                          style="font-size: 20px;">大</span><span
+                          style="font-size: 14px;">小</span>等简单排版操作。
                   </p>
                   <p style="text-align: left;"><span
-                    style="text-align: left;">也可在这里插入图片。</span></p>
+                          style="text-align: left;">也可在这里插入图片。</span></p>
                 </div>
                 <div v-html="item.eltm2.data.words">
 
@@ -897,7 +897,7 @@
                     <div class="pinfo">
                       <div class="pname" v-if="items.name!=''">
                         <label
-                          :style="{height:item.eltm4.charLine==1?'18px':'36px','-webkit-line-clamp':item.eltm4.charLine}">{{items.name}}</label>
+                                :style="{height:item.eltm4.charLine==1?'18px':'36px','-webkit-line-clamp':item.eltm4.charLine}">{{items.name}}</label>
                       </div>
                       <div class="pname" v-if="items.name==''">
                         <label>商品名称</label>
@@ -923,7 +923,7 @@
                       <div class="pprice">
                         <div class="pc" v-bind:style="{color:item.eltm4.priceColor}">
 															<span
-                                v-if="items.ItemSalePrice!='' && item.eltm4.isPrice"><label>￥</label>{{items.ItemSalePrice}}</span>
+                                                                    v-if="items.ItemSalePrice!='' && item.eltm4.isPrice"><label>￥</label>{{items.ItemSalePrice}}</span>
                         </div>
                         <div class="pprice"
                              v-if="items.ItemSalePrice=='' && item.eltm4.isPrice"
@@ -1012,7 +1012,7 @@
                                                             color:item.eltm6.fontColor
                                                             }">
 												<span v-if="item.eltm6.type==1"
-                              :style="{width:(items.flexNum>1?(items.flexNum+'px'):'100%')}">{{items.name || '请输入文字'}}</span>
+                                                      :style="{width:(items.flexNum>1?(items.flexNum+'px'):'100%')}">{{items.name || '请输入文字'}}</span>
                     <img v-if="item.eltm6.type==0"
                          :src="items.path ||  './static/diy/img/187x100.png'"
                          :style="{width:(item.eltm6.width>1?(item.eltm6.width+'px'):'100%'),height:(item.eltm6.height>1?(item.eltm6.height+'px'):'auto')}"/>
@@ -1062,11 +1062,11 @@
                                                             borderBottomLeftRadius: (item.borderBottomLeftRadius||0) + 'px',
                                                             borderBottomRightRadius: (item.borderBottomRightRadius||0) + 'px'}">
 										<span v-bind:class="{boxGrid:item.eltmType==7,boxGridBorder:item.eltm7.border}"
-                          v-for="items in item.eltm7.data" v-if="item.eltm7.data.length>0 && items"
-                          v-bind:style="{width:(100/item.eltm7.column)+'%',paddingTop:item.eltm7.paddingTop+'px',paddingBottom:item.eltm7.paddingBottom+'px',paddingLeft:item.eltm7.paddingLeft+'px',paddingRight:item.eltm7.paddingRight+'px',backgroundColor:item.bgColor}">
+                                              v-for="items in item.eltm7.data" v-if="item.eltm7.data.length>0 && items"
+                                              v-bind:style="{width:(100/item.eltm7.column)+'%',paddingTop:item.eltm7.paddingTop+'px',paddingBottom:item.eltm7.paddingBottom+'px',paddingLeft:item.eltm7.paddingLeft+'px',paddingRight:item.eltm7.paddingRight+'px',backgroundColor:item.bgColor}">
 											<div class="boxGridIcon">
 												<img :src="items.path || './static/diy/img/90x90.png'"
-                             alt="">
+                                                     alt="">
 											</div>
 											<p class="boxGridLabel">{{items.name || '功能入口'}}</p>
 										</span>
@@ -1207,8 +1207,8 @@
                 </div>
                 <div class="title-linke" v-if="item.eltm15.isLink"
                      v-bind:style="{color:item.eltm15.fontColor}">{{item.eltm15.linkText}}<i
-                  class="iconfont icon-right"
-                  v-bind:style="{color:item.eltm15.arrowColor}"></i></div>
+                        class="iconfont icon-right"
+                        v-bind:style="{color:item.eltm15.arrowColor}"></i></div>
                 <div class="editContent"
                      v-bind:class="{editContent:item.id>0,borderRed:item.id==ckId}"
                      v-on:click="editModule" :divid="item.id" :editType="item.eltmType">
@@ -1239,7 +1239,7 @@
                         <div class="activity-countdown" v-if="item.eltm16.isCountdown"
                              :style="{backgroundColor:item.eltm16.countdownBgColor,color:item.eltm16.countdownFontColor}">
                           {{items.timeTitle}} <label
-                          v-if="items.timeTitle!='已结束'">{{items.h}}:{{items.m}}:{{items.s}}</label>
+                                v-if="items.timeTitle!='已结束'">{{items.h}}:{{items.m}}:{{items.s}}</label>
                         </div>
                         <div class="mark" v-if="item.eltm16.isLabel">
                           <img :src="items.selectType==12?'./static/diy/img/prize3.png':items.selectType==13?'./static/diy/img/prize1.png':items.selectType==14?'./static/diy/img/prize2.png':'./static/diy/img/prize5.png'"
@@ -1256,10 +1256,10 @@
                         <div class="activity-price"
                              v-if="item.eltm16.isShowPrice==null || item.eltm16.isShowPrice">
 															<span class="price"
-                                    :style="{color:item.eltm16.priceColor}">￥{{items.ItemSalePrice}}</span><span
-                          class="del-price">￥{{items.MarketPice}}</span><span
-                          class="tip"
-                          v-if="items.selectType==12||items.selectType==13">{{items.UserLimit}}人团</span>
+                                                                  :style="{color:item.eltm16.priceColor}">￥{{items.ItemSalePrice}}</span><span
+                                class="del-price">￥{{items.MarketPice}}</span><span
+                                class="tip"
+                                v-if="items.selectType==12||items.selectType==13">{{items.UserLimit}}人团</span>
                         </div>
                         <div class="activity-desc" v-if="item.eltm16.isShowNum">
                           已有{{items.OrderCount}}人参加
@@ -1269,7 +1269,7 @@
                     <div class="activity-item" v-if="item.eltm16.data.length<=0">
                       <div class="activity-img">
                         <img
-                          src="./static/diy/img/180x180.png"/>
+                                src="./static/diy/img/180x180.png"/>
                         <div class="activity-countdown" v-if="item.eltm16.isCountdown"
                              :style="{backgroundColor:item.eltm16.countdownBgColor,color:item.eltm16.countdownFontColor}">
                           距结束 00:00:00
@@ -1288,8 +1288,8 @@
                         <div class="activity-price"
                              v-if="item.eltm16.isShowPrice=='undefined' || item.eltm16.isShowPrice">
 															<span class="price"
-                                    :style="{color:item.eltm16.priceColor}">￥00</span><span
-                          class="del-price">￥00</span><span class="tip">0人团</span>
+                                                                  :style="{color:item.eltm16.priceColor}">￥00</span><span
+                                class="del-price">￥00</span><span class="tip">0人团</span>
                         </div>
                         <div class="activity-desc" v-if="item.eltm16.isShowNum">
                           已有0000人参加
@@ -1305,7 +1305,7 @@
                         <div class="activity-countdown" v-if="item.eltm16.isCountdown"
                              :style="{backgroundColor:item.eltm16.countdownBgColor,color:item.eltm16.countdownFontColor}">
                           {{items.timeTitle}} <label
-                          v-if="items.timeTitle!='已结束'">{{items.h}}:{{items.m}}:{{items.s}}</label>
+                                v-if="items.timeTitle!='已结束'">{{items.h}}:{{items.m}}:{{items.s}}</label>
                         </div>
                         <div class="mark" v-if="item.eltm16.isLabel">
                           <img :src="items.selectType==12?'./static/diy/img/prize3.png':items.selectType==13?'./static/diy/img/prize1.png':items.selectType==14?'./static/diy/img/prize2.png':'./static/diy/img/prize5.png'"
@@ -1320,15 +1320,15 @@
                         </div>
                         <div class="activity-desc">
 															<span class="tip"
-                                    v-if="items.selectType!=14">2人团</span><span
-                          v-if="item.eltm16.isShowNum">已有{{items.OrderCount}}人参加</span>
+                                                                  v-if="items.selectType!=14">2人团</span><span
+                                v-if="item.eltm16.isShowNum">已有{{items.OrderCount}}人参加</span>
                         </div>
                         <div class="activity-price"
                              v-if="item.eltm16.isShowPrice=='undefined' || item.eltm16.isShowPrice">
 															<span class="price"
-                                    :style="{color:item.eltm16.priceColor}">￥{{items.ItemSalePrice}}</span><span
-                          class="del-price">￥{{items.MarketPice}}</span> <a
-                          :style="{backgroundColor:item.eltm16.btnBgColor,color:item.eltm16.btnFontColor}">{{items.words||(items.selectType==14?'去秒杀':'立即开团')}}</a>
+                                                                  :style="{color:item.eltm16.priceColor}">￥{{items.ItemSalePrice}}</span><span
+                                class="del-price">￥{{items.MarketPice}}</span> <a
+                                :style="{backgroundColor:item.eltm16.btnBgColor,color:item.eltm16.btnFontColor}">{{items.words||(items.selectType==14?'去秒杀':'立即开团')}}</a>
                         </div>
                       </div>
                     </div>
@@ -1353,14 +1353,14 @@
                         </div>
                         <div class="activity-desc">
                           <span class="tip">2人团</span><span
-                          v-if="item.eltm16.isShowNum">已有3677人参加</span>
+                                v-if="item.eltm16.isShowNum">已有3677人参加</span>
                         </div>
                         <div class="activity-price"
                              v-if="item.eltm16.isShowPrice=='undefined' || item.eltm16.isShowPrice">
 															<span class="price"
-                                    :style="{color:item.eltm16.priceColor}">￥200</span><span
-                          class="del-price">￥100</span> <a
-                          :style="{backgroundColor:item.eltm16.btnBgColor,color:item.eltm16.btnFontColor}">立即开团</a>
+                                                                  :style="{color:item.eltm16.priceColor}">￥200</span><span
+                                class="del-price">￥100</span> <a
+                                :style="{backgroundColor:item.eltm16.btnBgColor,color:item.eltm16.btnFontColor}">立即开团</a>
                         </div>
                       </div>
                     </div>
@@ -1432,21 +1432,21 @@
                   <div v-for="items in item.eltm13.data">
                     <div class="fromInput" v-if="items.type==1">
                       <label
-                        v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
+                              v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
                       <input type="text" name="name" value=""
                              :placeholder="items.placeholderText"
                              :style="{borderColor:items.borderColor,color:item.eltm13.textColor}"/>
                     </div>
                     <div class="fromInput" v-if="items.type==2">
                       <label
-                        v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
+                              v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
                       <input type="date" name="name" value=""
                              :placeholder="items.placeholderText"
                              :style="{borderColor:items.borderColor,color:item.eltm13.textColor}"/>
                     </div>
                     <div class="fromInput" v-if="items.type==3">
                       <label
-                        v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
+                              v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
                       <textarea :placeholder="items.placeholderText"
                                 :style="{borderColor: items.borderColor,color:item.eltm13.textColor}">
 
@@ -1454,32 +1454,32 @@
                     </div>
                     <div class="fromInput" v-if="items.type==4">
                       <label
-                        v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
+                              v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
                       <div class="fromCK_item" v-for="info in items.data">
                         <input type="radio" id="Radio56" name="name" checked="checked"
                                value=""/><i class="iconfont icon-danxuan1"></i><i
-                        class="iconfont icon-icon-text-fi-radio"
-                        :style="{color:items.selColor}"></i><span
-                        v-bind:style="{color:item.eltm13.textColor}">{{info.text}}</span>
+                              class="iconfont icon-icon-text-fi-radio"
+                              :style="{color:items.selColor}"></i><span
+                              v-bind:style="{color:item.eltm13.textColor}">{{info.text}}</span>
                         <label for="d"></label>
                       </div>
                     </div>
                     <div class="fromCK" v-if="items.type==5">
                       <label
-                        v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
+                              v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
                       <div class="fromCK_item" v-for="info in items.data">
                         <input type="checkbox" id="Checkbox1" checked="checked"
                                name="name" value=""/><i
-                        class="iconfont icon-xuanze"></i><i
-                        class="iconfont icon-xuanze1"
-                        :style="{color:items.selColor}"></i><span
-                        v-bind:style="{color:item.eltm13.textColor}">{{info.text}}</span>
+                              class="iconfont icon-xuanze"></i><i
+                              class="iconfont icon-xuanze1"
+                              :style="{color:items.selColor}"></i><span
+                              v-bind:style="{color:item.eltm13.textColor}">{{info.text}}</span>
                         <label for="Radio53"></label>
                       </div>
                     </div>
                     <div class="fromCK" v-if="items.type==6">
                       <label
-                        v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
+                              v-bind:style="{color:item.eltm13.labelColor}">{{items.labelText}}</label>
                       <div class="up_img_item">
                         <div v-for="n in parseInt(items.moreNum)" class="up_img">
                         </div>
@@ -1513,15 +1513,15 @@
                     <div class="fromCK_item">
                       <input type="radio" id="d" name="name" checked="checked"
                              value=""/><i class="iconfont icon-danxuan1"></i><i
-                      class="iconfont icon-icon-text-fi-radio"></i><span
-                      v-bind:style="{color:item.eltm13.textColor}">选项一</span>
+                            class="iconfont icon-icon-text-fi-radio"></i><span
+                            v-bind:style="{color:item.eltm13.textColor}">选项一</span>
                       <label for="d"></label>
                     </div>
                     <div class="fromCK_item">
                       <input type="radio" id="a" name="name" value=""/><i
-                      class="iconfont icon-danxuan1"></i><i
-                      class="iconfont icon-icon-text-fi-radio"></i><span
-                      v-bind:style="{color:item.eltm13.textColor}">选项二</span>
+                            class="iconfont icon-danxuan1"></i><i
+                            class="iconfont icon-icon-text-fi-radio"></i><span
+                            v-bind:style="{color:item.eltm13.textColor}">选项二</span>
                       <label for="a"></label>
                     </div>
                   </div>
@@ -1530,15 +1530,15 @@
                     <div class="fromCK_item">
                       <input type="checkbox" id="Radio53" checked="checked" name="name"
                              value=""/><i class="iconfont icon-xuanze"></i><i
-                      class="iconfont icon-xuanze1"></i><span
-                      v-bind:style="{color:item.eltm13.textColor}">选项一</span>
+                            class="iconfont icon-xuanze1"></i><span
+                            v-bind:style="{color:item.eltm13.textColor}">选项一</span>
                       <label for="Radio53"></label>
                     </div>
                     <div class="fromCK_item">
                       <input type="checkbox" id="Radio54" name="name" value=""/><i
-                      class="iconfont icon-xuanze"></i><i
-                      class="iconfont icon-xuanze1"></i><span
-                      v-bind:style="{color:item.eltm13.textColor}">选项二</span>
+                            class="iconfont icon-xuanze"></i><i
+                            class="iconfont icon-xuanze1"></i><span
+                            v-bind:style="{color:item.eltm13.textColor}">选项二</span>
                       <label for="Radio54"></label>
                     </div>
                   </div>
@@ -1727,7 +1727,7 @@
           <div id="msk_qrcode_img" style="display: none">
           </div>
           <label
-            style="color: red; font-size: 12px;display: inline-block; line-height: 20px; padding:0 20px; margin-top: 10px;display: none;">注：发布预览后可使用手机扫码预览效果</label>
+                  style="color: red; font-size: 12px;display: inline-block; line-height: 20px; padding:0 20px; margin-top: 10px;display: none;">注：发布预览后可使用手机扫码预览效果</label>
         </div>
         <!--商品选择弹出框 start-->
         <div class="full_msk" v-if="isShowDataInfoList">
@@ -1790,12 +1790,12 @@
 
               <vue-scroll :ops="ops">
                 <ul
-                  v-if="listType==1 || listType==2 || listType==5 || listType==6 || listType==8 || listType==10 || listType==11 || listType==104">
+                        v-if="listType==1 || listType==2 || listType==5 || listType==6 || listType==8 || listType==10 || listType==11 || listType==104">
                   <li v-for="item in tplDataInfoList">
                     <div class="full_info">
                       <div><img
-                        :src="item.path || './static/diy/img/up_img.png' "
-                        style="width: 80px; height: 80px;"/></div>
+                              :src="item.path || './static/diy/img/up_img.png' "
+                              style="width: 80px; height: 80px;"/></div>
                       <span>{{item.name}}</span>
                       <div><input type="button" :itemid="item.id" value="选取"
                                   v-on:click="useThatTplData"/>
@@ -1808,7 +1808,7 @@
                   <div class="full_icon" v-for="item in tplDataInfoList">
                     <div class="full_icon_item">
                       <div><img
-                        :src="item.path || './static/diy/img/up_img.png' "/>
+                              :src="item.path || './static/diy/img/up_img.png' "/>
                       </div>
                       <span>{{item.name}}</span>
                       <div><input type="button" :itemid="item.id" value="选取"
@@ -1821,8 +1821,8 @@
                   <div class="tabBar_icon" v-for="item in tplDataInfoList">
                     <div class="tabBar_icon_item">
                       <div><img
-                        :src="item.path || './static/diy/img/up_img.png' "/><img
-                        :src="item.ProductTips || './static/diy/img/up_img.png' "/>
+                              :src="item.path || './static/diy/img/up_img.png' "/><img
+                              :src="item.ProductTips || './static/diy/img/up_img.png' "/>
                       </div>
                       <span>{{item.name}}</span>
                       <div><input type="button" :itemid="item.id" value="选取"
@@ -1838,7 +1838,7 @@
                       <div class="active-content">
                         <div class="active-product-img">
                           <img
-                            :src="item.path || './static/diy/img/up_img.png' "/>
+                                  :src="item.path || './static/diy/img/up_img.png' "/>
                         </div>
                         <div class="active-product-name">
                           {{item.name}}
@@ -1860,7 +1860,7 @@
                       <div class="active-content">
                         <div class="active-product-img">
                           <img
-                            :src="item.path || './static/diy/img/up_img.png' "/>
+                                  :src="item.path || './static/diy/img/up_img.png' "/>
                         </div>
                         <div class="active-product-name">
                           {{item.name}}
@@ -1882,7 +1882,7 @@
                       <div class="active-content">
                         <div class="active-product-img">
                           <img
-                            :src="item.path || './static/diy/img/up_img.png' "/>
+                                  :src="item.path || './static/diy/img/up_img.png' "/>
                         </div>
                         <div class="active-product-name">
                           {{item.product_name}}
@@ -1904,7 +1904,7 @@
                       <div class="active-content">
                         <div class="active-product-img">
                           <img
-                            :src="item.path || './static/diy/img/up_img.png' "/>
+                                  :src="item.path || './static/diy/img/up_img.png' "/>
                         </div>
                         <div class="active-product-name">
                           {{item.name}}
@@ -2138,13 +2138,13 @@
                         <input type="radio" :id="'Radio48'+item.id"
                                v-model="item.bgColor" value="rgba(0,0,0,0)"/>
                         <label :for="'Radio48'+item.id"><i
-                          class="iconfont icon-xiegang"></i></label>
+                                class="iconfont icon-xiegang"></i></label>
                       </div>
                     </div>
                   </div>
 
                   <div
-                    v-if="item.eltmType!=1 && item.eltmType!=5 && item.eltmType!=8 && item.eltmType!=11 && item.eltmType!=18">
+                          v-if="item.eltmType!=1 && item.eltmType!=5 && item.eltmType!=8 && item.eltmType!=11 && item.eltmType!=18">
                     <div class="sub-level1 box_border">
                       <div class="sub-label">
                         上边距
@@ -2277,7 +2277,7 @@
                           <input type="radio" id="Radio3" v-model="item.eltm1.align"
                                  value="1"/>
                           <label for="Radio3"><i
-                            class="iconfont icon-zuoduiqi"></i></label>
+                                  class="iconfont icon-zuoduiqi"></i></label>
                         </div>
                       </div>
                       <div class="inputicon">
@@ -2285,7 +2285,7 @@
                           <input type="radio" id="Radio4" v-model="item.eltm1.align"
                                  value="2"/>
                           <label for="Radio4"><i
-                            class="iconfont icon-youduiqi"></i></label>
+                                  class="iconfont icon-youduiqi"></i></label>
                         </div>
                       </div>
                     </div>
@@ -2479,7 +2479,7 @@
                           <input type="radio" id="Radio3_3" v-model="item.eltm3.align"
                                  value="1"/>
                           <label for="Radio3_3"><i
-                            class="iconfont icon-zuoduiqi"></i></label>
+                                  class="iconfont icon-zuoduiqi"></i></label>
                         </div>
                       </div>
                       <div class="inputicon">
@@ -2487,7 +2487,7 @@
                           <input type="radio" id="Radio3_4" v-model="item.eltm3.align"
                                  value="2"/>
                           <label for="Radio3_4"><i
-                            class="iconfont icon-youduiqi"></i></label>
+                                  class="iconfont icon-youduiqi"></i></label>
                         </div>
                       </div>
                     </div>
@@ -2576,7 +2576,7 @@
                                  v-model="item.eltm4.listTyle" value="1"/>
                           <label for="Radio13">
                             <img
-                              src="./static/diy/img/t_03.png"/>
+                                    src="./static/diy/img/t_03.png"/>
                           </label>
                         </div>
                       </div>
@@ -2586,7 +2586,7 @@
                                  v-model="item.eltm4.listTyle" value="2"/>
                           <label for="Radio14">
                             <img
-                              src="./static/diy/img/t_06.png"/>
+                                    src="./static/diy/img/t_06.png"/>
                           </label>
                         </div>
                       </div>
@@ -2596,7 +2596,7 @@
                                  v-model="item.eltm4.listTyle" value="3"/>
                           <label for="Radio15">
                             <img
-                              src="./static/diy/img/t_08.png"/>
+                                    src="./static/diy/img/t_08.png"/>
                           </label>
                         </div>
                       </div>
@@ -2606,7 +2606,7 @@
                                  v-model="item.eltm4.listTyle" value="4"/>
                           <label for="Radio16">
                             <img
-                              src="./static/diy/img/t_10.png"/>
+                                    src="./static/diy/img/t_10.png"/>
                           </label>
                         </div>
                       </div>
@@ -2616,7 +2616,7 @@
                                  v-model="item.eltm4.listTyle" value="5"/>
                           <label for="Radio74">
                             <img
-                              src="./static/diy/img/t_11.png"/>
+                                    src="./static/diy/img/t_11.png"/>
                           </label>
                         </div>
                       </div>
@@ -2639,7 +2639,7 @@
                                  v-model="item.eltm4.btnType" value="1"/>
                           <label for="Radio17">
                             <img
-                              src="./static/diy/img/pc1.png"/>
+                                    src="./static/diy/img/pc1.png"/>
                           </label>
                         </div>
                       </div>
@@ -2649,7 +2649,7 @@
                                  v-model="item.eltm4.btnType" value="2"/>
                           <label for="Radio18">
                             <img
-                              src="./static/diy/img/pc2.png"/>
+                                    src="./static/diy/img/pc2.png"/>
                           </label>
                         </div>
                       </div>
@@ -2659,7 +2659,7 @@
                                  v-model="item.eltm4.btnType" value="3"/>
                           <label for="Radio19">
                             <img
-                              src="./static/diy/img/pc3.png"/>
+                                    src="./static/diy/img/pc3.png"/>
                           </label>
                         </div>
                       </div>
@@ -2669,7 +2669,7 @@
                                  v-model="item.eltm4.btnType" value="4"/>
                           <label for="Radio20">
                             <img
-                              src="./static/diy/img/pc4.png"/>
+                                    src="./static/diy/img/pc4.png"/>
                           </label>
                         </div>
                       </div>
@@ -2776,7 +2776,7 @@
                           <input type="radio" id="Radio22" v-model="item.eltm6.type"
                                  value="0"/>
                           <label for="Radio22" title="展示为图片的样式"><i
-                            class="iconfont icon-tupian"></i></label>
+                                  class="iconfont icon-tupian"></i></label>
                         </div>
                       </div>
                       <div class="inputicon">
@@ -2784,7 +2784,7 @@
                           <input type="radio" id="Radio23" v-model="item.eltm6.type"
                                  value="1"/>
                           <label for="Radio23" title="展示为文字的样式"><i
-                            class="iconfont icon-wenzi"></i></label>
+                                  class="iconfont icon-wenzi"></i></label>
                         </div>
                       </div>
                     </div>
@@ -2898,7 +2898,7 @@
                           <input type="radio" id="Radio24"
                                  v-model="item.eltm6.justifyContent" value="0"/>
                           <label for="Radio24"><i
-                            class="iconfont icon-zuoduiqi"></i></label>
+                                  class="iconfont icon-zuoduiqi"></i></label>
                         </div>
                       </div>
                       <div class="inputicon">
@@ -2906,7 +2906,7 @@
                           <input type="radio" id="Radio26"
                                  v-model="item.eltm6.justifyContent" value="2"/>
                           <label for="Radio26"><i
-                            class="iconfont icon-juzhongduiqi"></i></label>
+                                  class="iconfont icon-juzhongduiqi"></i></label>
                         </div>
                       </div>
                       <div class="inputicon">
@@ -2914,7 +2914,7 @@
                           <input type="radio" id="Radio25"
                                  v-model="item.eltm6.justifyContent" value="1"/>
                           <label for="Radio25"><i
-                            class="iconfont icon-youduiqi"></i></label>
+                                  class="iconfont icon-youduiqi"></i></label>
                         </div>
                       </div>
                     </div>
@@ -3234,8 +3234,8 @@
                         <div class="inputicon m_data_img">
 															<span v-if="isUploadImage">
 																<input type="file" name="upfile" :id="'File'+item.id"
-                                       v-on:change="uploadImage" :fileId="item.id"
-                                       :uptype="2" :msType="12"/></span>
+                                                                       v-on:change="uploadImage" :fileId="item.id"
+                                                                       :uptype="2" :msType="12"/></span>
 
                           <img :src="item.eltm12.poster||'./static/diy/img/up_img.png' "
                                :uptype="2" :imgId="item.id" :msType="12"/>
@@ -3358,10 +3358,10 @@
                       </div>
                       <div class="inputicon m_data_img"><span v-if="isUploadImage">
 															<input type="file" name="upfile" :id="'File'+item.id"
-                                     v-on:change="uploadImage" :fileId="item.id"
-                                     :uptype="4"
-                                     :msType="14" :imgwidth="100" :imgheight="100"
-                                     :imgSize="40"/></span>
+                                                                   v-on:change="uploadImage" :fileId="item.id"
+                                                                   :uptype="4"
+                                                                   :msType="14" :imgwidth="100" :imgheight="100"
+                                                                   :imgSize="40"/></span>
 
                         <img :src="item.eltm14.image || './static/diy/img/up_img.png' "
                              :uptype="4" :imgId="item.id" :msType="14" :imgwidth="100"
@@ -3437,10 +3437,10 @@
                       </div>
                       <div class="inputicon m_data_img"><span v-if="isUploadImage">
 															<input type="file" name="upfile" :id="'File'+item.id"
-                                     v-on:change="uploadImage" :fileId="item.id"
-                                     :uptype="5"
-                                     :msType="15" :imgwidth="100" :imgheight="100"
-                                     :imgSize="40"/></span>
+                                                                   v-on:change="uploadImage" :fileId="item.id"
+                                                                   :uptype="5"
+                                                                   :msType="15" :imgwidth="100" :imgheight="100"
+                                                                   :imgSize="40"/></span>
                         <img :src="item.eltm15.icon || './static/diy/img/up_img.png' "
                              :uptype="5" :imgId="item.id" :msType="15" :imgwidth="100"
                              :imgheight="100" :imgSize="40"/>
@@ -3569,7 +3569,7 @@
                                  v-model="item.eltm16.layout" value="1"/>
                           <label for="Radio64">
                             <img
-                              src="./static/diy/img/label3.png"/>
+                                    src="./static/diy/img/label3.png"/>
                           </label>
                         </div>
                       </div>
@@ -3579,7 +3579,7 @@
                                  v-model="item.eltm16.layout" value="2"/>
                           <label for="Radio65">
                             <img
-                              src="./static/diy/img/label2.png"/>
+                                    src="./static/diy/img/label2.png"/>
                           </label>
                         </div>
                       </div>
@@ -3589,7 +3589,7 @@
                                  v-model="item.eltm16.layout" value="3"/>
                           <label for="Radio66">
                             <img
-                              src="./static/diy/img/label1.png"/>
+                                    src="./static/diy/img/label1.png"/>
                           </label>
                         </div>
                       </div>
@@ -3739,7 +3739,7 @@
                           <input type="radio" id="Radio71"
                                  v-model="item.eltm17.layout" value="1"/>
                           <label for="Radio71"><i
-                            class="iconfont icon-wenzi "></i></label>
+                                  class="iconfont icon-wenzi "></i></label>
                         </div>
                       </div>
                       <div class="inputicon">
@@ -3747,7 +3747,7 @@
                           <input type="radio" id="Radio72"
                                  v-model="item.eltm17.layout" value="2"/>
                           <label for="Radio72"><i
-                            class="iconfont icon-tupian"></i></label>
+                                  class="iconfont icon-tupian"></i></label>
                         </div>
                       </div>
                     </div>
@@ -4094,9 +4094,9 @@
                          style="width:200px !important;height:355px !important;">
 													<span v-if="isUploadImage">
 														<input type="file" :name="'upfile'" :id="'indexBgImg'"
-                                   v-on:change="uploadImage" :fileId="'indexBgImg'"
-                                   :uptype="3"
-                                   :imgwidth="750" :imgheight="1334" :size="400"/>
+                                                               v-on:change="uploadImage" :fileId="'indexBgImg'"
+                                                               :uptype="3"
+                                                               :imgwidth="750" :imgheight="1334" :size="400"/>
 													</span>
                       <img :src="PageConfig.BackgroundObj.path || './static/diy/img/up_img.png' "
                            :imgId="'indexBgImg'" :uptype="3" :imgwidth="750"
@@ -4126,7 +4126,7 @@
                       <div class="inputicon m_data_img">
 														<span v-if="isUploadImage">
 															<input type="file" name="upfile" :id="'File'+index"
-                                     v-on:change="uploadImage" :fileId="index"/>
+                                                                   v-on:change="uploadImage" :fileId="index"/>
 														</span>
                         <img :src="item.iconPath || './static/diy/img/up_img.png' "
                              :imgId="index" :imgwidth="100" :imgheight="100"
@@ -4140,8 +4140,8 @@
                       <div class="inputicon m_data_img">
 														<span v-if="isUploadImage">
 															<input type="file" name="upfile" :id="'File'+(index+12)"
-                                     v-on:change="uploadImage" :fileId="index+12"
-                                     :imgwidth="100" :imgheight="100" :imgSize="40"/>
+                                                                   v-on:change="uploadImage" :fileId="index+12"
+                                                                   :imgwidth="100" :imgheight="100" :imgSize="40"/>
 														</span>
                         <img :src="item.selectedIconPath || './static/diy/img/up_img.png' "
                              :imgId="index+12" :imgwidth="100" :imgheight="100"
@@ -4433,8 +4433,8 @@
                              placeholder="请输入地址，网址中/h5后面部分内容" v-if="mskData.selectType==4"
                              style="width: 90%;margin-bottom: 10px;"/>
                       <input type="text" v-model="mskData.name" placeholder="请选择地址"/><a
-                      href="javascript:void(0)" v-on:click="getModuleTplData"
-                      :selectid="mskData.id" :urlType="mskData.selectType">选择</a>
+                            href="javascript:void(0)" v-on:click="getModuleTplData"
+                            :selectid="mskData.id" :urlType="mskData.selectType">选择</a>
                     </div>
                     <div class="inputBox" v-if="mskData.selectType==12">
                       <input type="text" v-model="mskData.name" placeholder="请输入电话号码"/>
@@ -4445,7 +4445,7 @@
 															输入网页地址 </div>
 														<div class="inputBox">
 															<input type="text" v-model="mskData.AppUrl"
-                                     placeholder="请输入网页地址"/>
+                                                                   placeholder="请输入网页地址"/>
 															<p style="color: red;line-height: 20px;">
 																注：需登录小程序管理后台配置域名白名单。</p>
 														</div>
@@ -4455,7 +4455,7 @@
 															标题 </div>
 														<div class="inputBox">
 															<input type="text" v-model="mskData.name"
-                                     placeholder="请输入标题"/>
+                                                                   placeholder="请输入标题"/>
 														</div>
 													</div>
 													<div class="sub-level1 box_border">
@@ -4463,7 +4463,7 @@
 															标题栏颜色 </div>
 														<div class="inputBox">
 															<input type="color" v-model="mskData.keyWord"
-                                     placeholder="请选择标题栏颜色"/>
+                                                                   placeholder="请选择标题栏颜色"/>
 														</div>
 													</div>
 													<div class="sub-level1 box_border">
@@ -4472,17 +4472,17 @@
 														<div class="inputicon">
 															<div class="radioBox">
 																<input type="radio" id="Radio51" v-model="mskData.AppId"
-                                       value="white"/>
+                                                                       value="white"/>
 																<label for="Radio51"
-                                       style="background-color:White;"></label>
+                                                                       style="background-color:White;"></label>
 															</div>
 														</div>
 														<div class="inputicon">
 															<div class="radioBox">
 																<input type="radio" id="Radio52" v-model="mskData.AppId"
-                                       value="black"/>
+                                                                       value="black"/>
 																<label for="Radio52"
-                                       style="background-color:black;"></label>
+                                                                       style="background-color:black;"></label>
 															</div>
 														</div>
 													</div>
@@ -4499,8 +4499,8 @@
                       <div class="inputicon m_data_img">
 														<span v-if="isUploadImage">
 															<input type="file" name="upfile" :id="'File'+mskData.id"
-                                     v-on:change="uploadImage" :fileId="mskData.id"
-                                     :uptype="2" :msType="msType"/>
+                                                                   v-on:change="uploadImage" :fileId="mskData.id"
+                                                                   :uptype="2" :msType="msType"/>
 														</span>
                         <img :src="mskData.path || './static/diy/img/up_img.png' "
                              :imgId="mskData.id"/>
@@ -4807,7 +4807,7 @@
 																	输入网页地址 </div>
 																<div class="inputBox">
 																	<input type="text" v-model="item.AppUrl"
-                                         placeholder="请输入网页地址"/>
+                                                                           placeholder="请输入网页地址"/>
 																	<p style="color: red;line-height: 20px;">
 																		注：需登录小程序管理后台配置域名白名单。</p>
 																</div>
@@ -4817,7 +4817,7 @@
 																	标题 </div>
 																<div class="inputBox">
 																	<input type="text" v-model="item.name"
-                                         placeholder="请输入标题"/>
+                                                                           placeholder="请输入标题"/>
 																</div>
 															</div>
 															<div class="sub-level1 box_border">
@@ -4825,7 +4825,7 @@
 																	标题栏颜色 </div>
 																<div class="inputBox">
 																	<input type="color" v-model="item.keyWord"
-                                         placeholder="请选择标题栏颜色"/>
+                                                                           placeholder="请选择标题栏颜色"/>
 																</div>
 															</div>
 															<div class="sub-level1 box_border">
@@ -4834,17 +4834,17 @@
 																<div class="inputicon">
 																	<div class="radioBox">
 																		<input type="radio" :id="'Radio53'+item.id"
-                                           v-model="item.AppId" value="white"/>
+                                                                               v-model="item.AppId" value="white"/>
 																		<label :for="'Radio53'+item.id"
-                                           style="background-color:White;"></label>
+                                                                               style="background-color:White;"></label>
 																	</div>
 																</div>
 																<div class="inputicon">
 																	<div class="radioBox">
 																		<input type="radio" :id="'Radio54'+item.id"
-                                           v-model="item.AppId" value="black"/>
+                                                                               v-model="item.AppId" value="black"/>
 																		<label :for="'Radio54'+item.id"
-                                           style="background-color:black;"></label>
+                                                                               style="background-color:black;"></label>
 																	</div>
 																</div>
 															</div>
@@ -4861,9 +4861,9 @@
                           <div class="inputicon m_data_img">
 																<span v-if="isUploadImage">
 																	<input type="file" name="upfile"
-                                         :id="'File'+item.id"
-                                         v-on:change="uploadImage"
-                                         :fileId="item.id"/>
+                                                                           :id="'File'+item.id"
+                                                                           v-on:change="uploadImage"
+                                                                           :fileId="item.id"/>
 																</span>
                             <img :src="item.path || './static/diy/img/up_img.png' "
                                  :imgId="item.id"/>
@@ -4923,7 +4923,7 @@
                                    v-model="item.type" value="1"/>
                             <label :for="'Radio55'+item.id">
                               <img
-                                src="./static/diy/img/subForm1.png"/>
+                                      src="./static/diy/img/subForm1.png"/>
                               <i>text</i>
                             </label>
                           </div>
@@ -4934,7 +4934,7 @@
                                    v-model="item.type" value="2"/>
                             <label :for="'Radio56'+item.id">
                               <img
-                                src="./static/diy/img/subForm7_maka.png"/>
+                                      src="./static/diy/img/subForm7_maka.png"/>
                               <i>data</i>
                             </label>
                           </div>
@@ -4945,7 +4945,7 @@
                                    v-model="item.type" value="3"/>
                             <label :for="'Radio57'+item.id">
                               <img
-                                src="./static/diy/img/subForm2.png"/>
+                                      src="./static/diy/img/subForm2.png"/>
                               <i>textarea</i>
                             </label>
                           </div>
@@ -4956,7 +4956,7 @@
                                    v-model="item.type" value="4"/>
                             <label :for="'Radio58'+item.id">
                               <img
-                                src="./static/diy/img/subForm34.png"/>
+                                      src="./static/diy/img/subForm34.png"/>
                               <i>radio</i>
                             </label>
                           </div>
@@ -4967,7 +4967,7 @@
                                    v-model="item.type" value="5"/>
                             <label :for="'Radio59'+item.id">
                               <img
-                                src="./static/diy/img/subForm31.png"/>
+                                      src="./static/diy/img/subForm31.png"/>
                               <i>checkbox</i>
                             </label>
                           </div>
@@ -4978,7 +4978,7 @@
                                    v-model="item.type" value="6"/>
                             <label :for="'Radio81'+item.id">
                               <img
-                                src="./static/diy/img/subForm35.png"/>
+                                      src="./static/diy/img/subForm35.png"/>
                               <i>image</i>
                             </label>
                           </div>
@@ -5019,7 +5019,7 @@
                               <input type="radio" :id="'Radio60'+item.id"
                                      v-model="item.isVerification" value="0"/>
                               <label :for="'Radio60'+item.id"><i
-                                class="iconfont icon-ZHicon-"></i></label>
+                                      class="iconfont icon-ZHicon-"></i></label>
                             </div>
                           </div>
                           <div class="inputicon">
@@ -5027,7 +5027,7 @@
                               <input type="radio" :id="'Radio61'+item.id"
                                      v-model="item.isVerification" value="1"/>
                               <label :for="'Radio61'+item.id"><i
-                                class="iconfont icon-shouji"></i></label>
+                                      class="iconfont icon-shouji"></i></label>
                             </div>
                           </div>
                           <div class="inputicon">
@@ -5035,7 +5035,7 @@
                               <input type="radio" :id="'Radio62'+item.id"
                                      v-model="item.isVerification" value="2"/>
                               <label :for="'Radio62'+item.id"><i
-                                class="iconfont icon-youxiang"></i></label>
+                                      class="iconfont icon-youxiang"></i></label>
                             </div>
                           </div>
                         </div>
@@ -5058,9 +5058,9 @@
                                style="margin: 5px;">
                             <input type="text" v-model="info.text"
                                    placeholder="请输入标题"/><a :dataid="info.id"
-                                                           :datapid="item.id"
-                                                           v-on:click="delCKInput"
-                                                           style="cursor: pointer;">删除</a>
+                                                                :datapid="item.id"
+                                                                v-on:click="delCKInput"
+                                                                style="cursor: pointer;">删除</a>
                           </div>
                         </div>
                         <div class="sub-level1 box_border addSel">
@@ -5198,12 +5198,12 @@
                         </div>
                         <div class="produc-info">
                           <div class="inputicon m_data_img"><span
-                            v-if="isUploadImage">
+                                  v-if="isUploadImage">
 																	<input type="file" name="upfile"
-                                         :id="'File'+item.id"
-                                         v-on:change="uploadImage"
-                                         :fileId="item.id" :uptype="2"
-                                         :msType="msType"/></span>
+                                                                           :id="'File'+item.id"
+                                                                           v-on:change="uploadImage"
+                                                                           :fileId="item.id" :uptype="2"
+                                                                           :msType="msType"/></span>
 
                             <img :src="item.path || './static/diy/img/up_img.png' "
                                  :imgId="item.id" :uptype="2" :msType="msType"/>
