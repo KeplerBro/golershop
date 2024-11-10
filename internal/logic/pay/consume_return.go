@@ -163,6 +163,7 @@ func (s *sConsumeReturn) DoRefund(ctx context.Context, orderReturns []*entity.Or
 				RecordMoney:         waitingRefundAmount.Neg().Add(returnCommisionFee),
 				RecordCommissionFee: returnCommisionFee.Neg(),
 				TradeTypeId:         consts.TRADE_TYPE_REFUND_PAY,
+				RecordDate:          curDate,
 			}
 
 			orderDataDo := &do.OrderData{}

@@ -466,6 +466,7 @@ func (c *cPaymentIndex) OfflinePay(ctx context.Context, req *pay.OfflinePayReq) 
 			orderInfo := &do.OrderInfo{
 				OrderId:       orderId,
 				PaymentTypeId: consts.PAYMENT_TYPE_OFFLINE,
+				OrderIsPaid:   consts.ORDER_PAID_STATE_YES,
 			}
 
 			if _, err := service.OrderInfo().Edit(ctx, orderInfo); err != nil {
@@ -481,6 +482,7 @@ func (c *cPaymentIndex) OfflinePay(ctx context.Context, req *pay.OfflinePayReq) 
 		}
 
 		res.Paid = true
+		res.StatusCode = 200
 		return res, nil
 	} else {
 		res.Paid = false
